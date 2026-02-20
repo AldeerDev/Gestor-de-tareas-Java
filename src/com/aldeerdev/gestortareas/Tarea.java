@@ -15,6 +15,11 @@ public class Tarea {
 		this.estado = false;
 	}
 
+	// metodo para guardar en archivo
+	public String convertirFormatoArchivo() {
+		return descripcion + ";" + estado + ":" + fechaCreacion;
+	}
+
 	public String getDescripcion() {
 		return descripcion;
 	}
