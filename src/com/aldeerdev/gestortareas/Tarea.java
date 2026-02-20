@@ -6,13 +6,13 @@ public class Tarea {
 
 	private String descripcion;
 	private LocalDate fechaCreacion;
-	private Boolean completada;
+	private Boolean estado;
 
 	public Tarea(String descripcion) {
 		super();
 		this.descripcion = descripcion;
 		this.fechaCreacion = LocalDate.now();
-		this.completada = false;
+		this.estado = false;
 	}
 
 	public String getDescripcion() {
@@ -31,17 +31,17 @@ public class Tarea {
 		this.fechaCreacion = fechaCreacion;
 	}
 
-	public Boolean getCompletada() {
-		return completada;
+	public Boolean isEstado() {
+		return estado;
 	}
 
-	public void setCompletada(Boolean completada) {
-		this.completada = completada;
+	public void setEstado(Boolean completada) {
+		this.estado = completada;
 	}
 
 	@Override
 	public String toString() {
-		return (completada ? "[✓]" : "[ ]") + descripcion;
+		return (estado ? "[✓] " : "[ ] ") + descripcion;
 	}
 
 }
