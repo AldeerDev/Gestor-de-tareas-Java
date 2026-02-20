@@ -27,7 +27,7 @@ public class GestorTareas {
 
 	public void completarTarea(int indice) {
 		if (indice >= 0 && indice < tareas.size()) {
-			tareas.get(indice).setCompletada(true);
+			tareas.get(indice).setEstado(true);
 		} else {
 			System.out.println("Indice invalido.");
 		}
