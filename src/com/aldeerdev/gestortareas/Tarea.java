@@ -23,6 +23,14 @@ public class Tarea {
 		this.descripcion = descripcion;
 	}
 
+	public LocalDate getFechaCreacion() {
+		return fechaCreacion;
+	}
+
+	public void setFechaCreacion(LocalDate fechaCreacion) {
+		this.fechaCreacion = fechaCreacion;
+	}
+
 	public Boolean getCompletada() {
 		return completada;
 	}
