@@ -41,7 +41,7 @@ public class Tarea {
 
 	@Override
 	public String toString() {
-		return (estado ? "[✓] " : "[ ] ") + descripcion;
+		return (estado ? "[✓] " : "[ ] ") + descripcion + " (Creada: " + fechaCreacion + ")";
 	}
 
 }
