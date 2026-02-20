@@ -11,6 +11,7 @@ public class Tarea {
 	public Tarea(String descripcion) {
 		super();
 		this.descripcion = descripcion;
+		this.fechaCreacion = LocalDate.now();
 		this.completada = false;
 	}
 
