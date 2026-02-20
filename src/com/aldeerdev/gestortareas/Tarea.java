@@ -1,8 +1,11 @@
 package com.aldeerdev.gestortareas;
 
+import java.time.LocalDate;
+
 public class Tarea {
 
 	private String descripcion;
+	private LocalDate fechaCreacion;
 	private Boolean completada;
 
 	public Tarea(String descripcion) {
